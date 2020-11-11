@@ -2,8 +2,7 @@
   "name": "codeplay",
   "main": "./lib/codeplay",
   "version": "0.0.0",
-  "description": "A coding environment to allow for music live coding over
-                  distances",
+  "description": "A coding environment for music live coding over distances",
   "keywords": [
   ],
   "activationCommands": {
