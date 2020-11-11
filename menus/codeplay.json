@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle codeplay",
+        "command": "codeplay:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "codeplay",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "codeplay:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
