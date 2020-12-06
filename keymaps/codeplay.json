@@ -1,5 +1,9 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "codeplay:toggle"
+  ".workspace .editor[data-grammar='source python']": {
+    "ctrl-alt-f": "codeplay:toggle",
+    "ctrl-enter": "codeplay:evaluate-blocks",
+    "ctrl-alt-enter": "codeplay:evaluate-file",
+    "alt-enter": "codeplay:evaluate-lines",
+    "ctrl-.": "codeplay:clear-clock"
   }
 }

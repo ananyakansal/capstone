@@ -2,8 +2,35 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle codeplay",
-        "command": "codeplay:toggle"
+        "label": "codeplay",
+        "submenu": [
+          {
+            "label": "Toggle",
+            "command": "codeplay:toggle"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "label": "Evaluate file",
+            "command": "codeplay:evaluate-file"
+          },
+          {
+            "label": "Evaluate block(s)",
+            "command": "codeplay:evaluate-blocks"
+          },
+          {
+            "label": "Evaluate line(s)",
+            "command": "codeplay:evaluate-lines"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "label": "Clear clock",
+            "command": "codeplay:clear-clock"
+          }
+        ]
       }
     ]
   },
@@ -17,6 +44,28 @@
             {
               "label": "Toggle",
               "command": "codeplay:toggle"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "label": "Evaluate file",
+              "command": "codeplay:evaluate-file"
+            },
+            {
+              "label": "Evaluate block(s)",
+              "command": "codeplay:evaluate-blocks"
+            },
+            {
+              "label": "Evaluate line(s)",
+              "command": "codeplay:evaluate-lines"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "label": "Clear clock",
+              "command": "codeplay:clear-clock"
             }
           ]
         }
