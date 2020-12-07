@@ -2,33 +2,33 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "codeplay",
+        "label": "FoxDot",
         "submenu": [
           {
             "label": "Toggle",
-            "command": "codeplay:toggle"
+            "command": "foxdot:toggle"
           },
           {
             "type": "separator"
           },
           {
             "label": "Evaluate file",
-            "command": "codeplay:evaluate-file"
+            "command": "foxdot:evaluate-file"
           },
           {
             "label": "Evaluate block(s)",
-            "command": "codeplay:evaluate-blocks"
+            "command": "foxdot:evaluate-blocks"
           },
           {
             "label": "Evaluate line(s)",
-            "command": "codeplay:evaluate-lines"
+            "command": "foxdot:evaluate-lines"
           },
           {
             "type": "separator"
           },
           {
             "label": "Clear clock",
-            "command": "codeplay:clear-clock"
+            "command": "foxdot:clear-clock"
           }
         ]
       }
@@ -39,33 +39,33 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "codeplay",
+          "label": "FoxDot",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "codeplay:toggle"
+              "command": "foxdot:toggle"
             },
             {
               "type": "separator"
             },
             {
               "label": "Evaluate file",
-              "command": "codeplay:evaluate-file"
+              "command": "foxdot:evaluate-file"
             },
             {
               "label": "Evaluate block(s)",
-              "command": "codeplay:evaluate-blocks"
+              "command": "foxdot:evaluate-blocks"
             },
             {
               "label": "Evaluate line(s)",
-              "command": "codeplay:evaluate-lines"
+              "command": "foxdot:evaluate-lines"
             },
             {
               "type": "separator"
             },
             {
               "label": "Clear clock",
-              "command": "codeplay:clear-clock"
+              "command": "foxdot:clear-clock"
             }
           ]
         }
