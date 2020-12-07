@@ -79,35 +79,35 @@ export function activate() {
 		}),
 
 		atom.commands.add('atom-workspace', {
-			'codeplay:clear-clock': (event) => {
+			'foxdot:clear-clock': (event) => {
 				if (!foxDot) {
 					return event.abortKeyBinding();
 				} else {
 					foxDot.clearClock();
 				}
 			},
-			'codeplay:evaluate-blocks': (event) => {
+			'foxdot:evaluate-blocks': (event) => {
 				if (!foxDot) {
 					return event.abortKeyBinding();
 				} else {
 					foxDot.evaluateBlocks();
 				}
 			},
-			'codeplay:evaluate-file': (event) => {
+			'foxdot:evaluate-file': (event) => {
 				if (!foxDot) {
 					return event.abortKeyBinding();
 				} else {
 					foxDot.evaluateFile();
 				}
 			},
-			'codeplay:evaluate-lines': (event) => {
+			'foxdot:evaluate-lines': (event) => {
 				if (!foxDot) {
 					return event.abortKeyBinding();
 				} else {
 					foxDot.evaluateLines();
 				}
 			},
-			'codeplay:toggle': () => {
+			'foxdot:toggle': () => {
 				if (!foxDot) {
 					start();
 				} else {
