@@ -1,18 +1,54 @@
 {
-  "name": "codeplay",
-  "main": "./lib/codeplay",
-  "version": "0.0.0",
-  "description": "A coding environment for music live coding over distances",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "codeplay:toggle"
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A coding environment for remote collaborative music live coding.",
+  "devDependencies": {
+    "@types/atom": "^1.40.1",
+    "@types/node": "^13.9.3",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-sort-keys-fix": "^1.1.0",
+    "gulp": "^4.0.2",
+    "prettier": "^2.0.1",
+    "require-dir": "^1.2.0",
+    "shx": "^0.3.2",
+    "typescript": "^3.8.3"
   },
-  "repository": "https://github.com/atom/codeplay",
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "homepage": "https://github.com/ananyakansal/capstone/blob/master/README.md",
+  "keywords": [
+    "foxdot",
+    "livecoding",
+    "supercollider"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "codeplay",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananyakansal/capstone.git"
+  },
+  "scripts": {
+    "clean": "shx rm -rf lib",
+    "format": "eslint . --ext .ts --fix && prettier --write **/*{.js,.json,.ts,.yml}",
+    "lint": "eslint . --ext .ts && prettier --check **/*{.js,.json,.ts,.yml}",
+    "watch": "tsc --watch"
+  },
+  "types": "lib/index.d.ts",
+  "version": "0.0.0"
 }
